@@ -1,7 +1,7 @@
 @mixin hive-circle($item-count, $circle-size, $item-size) {
   position: relative;
-  width:  $circle-size;
-  height: $circle-size;
+  // width:  $circle-size;
+  // height: $circle-size;
   padding: 0;
   border-radius: 50%; 
   list-style: none;       
@@ -32,13 +32,13 @@
 };
 
 .hive{
-	// padding-left: 20px;
-	// padding-top: 42px;
-	// height: 92px;
-	// width: 117px;
-	// background-color: black;
-	// display: flex;
+  display: flex;
+  flex-direction: column;
+
 	.hive-circle{
+    height: 200px;
+    width: 200px;
+
   		@include hive-circle($item-count: 6, $circle-size: 185px, $item-size: 100px); 
 	}
 	.center{
@@ -46,6 +46,8 @@
      top:150px;
      left:43px;
 	}
+
 }
+
 
 

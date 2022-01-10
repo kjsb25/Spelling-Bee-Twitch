@@ -1,12 +1,12 @@
 import React from 'react';
-import Hive from "./Hive"
+import HiveInput from "./HiveInput"
 import '../css/SpellingBee.scss';
 
 
 class SpellingBee extends React.Component {
 	render(){
 		return(
-			<Hive />
+			<HiveInput mainLetter="0" otherLetters='123456' />
 		)
 	} 
 }
