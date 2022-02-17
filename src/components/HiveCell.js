@@ -22,7 +22,7 @@ class HiveCell extends React.Component {
 		return(
 			<div className={className}>
 				{tile}
-				<text className="cellLetter">{this.props.letter}</text>
+				<span className="cellLetter">{this.props.letter}</span>
 			</div>
 		)
 	} 
